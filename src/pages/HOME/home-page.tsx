@@ -1,15 +1,17 @@
 import { ProductCard } from "../../features/products/components/product-card";
 import { useProducts } from "../../features/products/hooks/use-products";
+import { Error } from "../../shared/components/error/error";
+import { Loading } from "../../shared/components/loading/loading";
 
 export function HomePage() {
   const { data, isPending, error } = useProducts();
 
   if (isPending) {
-    return <h1>Loading...</h1>;
+    return <Loading />;
   }
 
   if (error) {
-    return <h1>Something went wrong.</h1>;
+    return <Error />;
   }
 
   return (
