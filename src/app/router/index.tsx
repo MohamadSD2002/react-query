@@ -4,22 +4,27 @@ import { HomePage } from "../../pages/HOME/home-page";
 import { ProductPage } from "../../pages/product/product-page";
 import { CreateProductPage } from "../../pages/create-product/create-product-page";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      element: <RootLayout />,
+      children: [
+        {
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/products/:id",
+          element: <ProductPage />,
+        },
+        {
+          path: "/products/create",
+          element: <CreateProductPage />,
+        },
+      ],
+    },
+  ],
   {
-    element: <RootLayout />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/products/:id",
-        element: <ProductPage />,
-      },
-      {
-        path: "/products/create",
-        element: <CreateProductPage />,
-      },
-    ],
-  },
-]);
+    basename: "/react-query",
+  }
+);
