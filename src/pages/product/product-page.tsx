@@ -4,7 +4,7 @@ import { useProduct } from "../../features/products/hooks/use-product";
 
 import "./product-page.css";
 import { Loading } from "../../shared/components/loading/loading";
-import { Error } from "../../shared/components/error/error";
+import { ErrorState } from "../../shared/components/error/error-state";
 
 export function ProductPage() {
   const { id } = useParams();
@@ -26,7 +26,7 @@ export function ProductPage() {
   }
 
   if (error) {
-    return <Error />;
+    return <ErrorState />;
   }
 
   return (

@@ -2,10 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import { getProducts } from "../api/get-products";
 import { sortProductsByPrice } from "../utils/sort-products";
-
-export const productKeys = {
-  all: ["products"] as const,
-};
+import { productKeys } from "../utils/product-keys";
 
 export function useProducts() {
   return useQuery({

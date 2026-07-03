@@ -1,9 +1,6 @@
 import { axiosInstance } from "../../../app/lib/axios";
-import type { Product } from "../types/product";
+import type { ProductsResponse } from "../types/products-response";
 
-interface ProductsResponse {
-  products: Product[];
-}
 
 export async function getProducts() {
   const response = await axiosInstance.get<ProductsResponse>("/products");

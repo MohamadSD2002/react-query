@@ -1,11 +1,15 @@
+import "./loading.css";
+
 type LoadingProps = {
   message?: string;
 };
 
 export function Loading({ message = "Loading..." }: LoadingProps) {
   return (
-    <div className="loading">
-      {message}
-    </div>
+    <section className="loading">
+      <div className="loading-spinner" />
+
+      <p>{message}</p>
+    </section>
   );
 }

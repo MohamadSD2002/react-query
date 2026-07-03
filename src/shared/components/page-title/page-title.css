@@ -1,0 +1,15 @@
+.page-title {
+  margin-bottom: 24px;
+
+  color: #111827;
+
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+}
