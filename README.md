@@ -8,23 +8,6 @@ A mini project built with **React**, **TypeScript**, **Vite**, **Axios**, and **
 
 ---
 
-## 📸 Preview
-
-> You can add a screenshot or GIF here.
-
-```text
-docs/
- └── preview.png
-```
-
-Example:
-
-```md
-![Preview](./docs/preview.png)
-```
-
----
-
 ## ✨ Features
 
 - Fetch products using React Query
