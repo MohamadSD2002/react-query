@@ -1,75 +1,149 @@
-# React + TypeScript + Vite
+# React Query
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mini project built with **React**, **TypeScript**, **Vite**, **Axios**, and **TanStack React Query** to learn server state management, caching, mutations, optimistic updates, and query invalidation.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-React%20Query-blue?style=for-the-badge)](https://mohamadsd2002.github.io/react-query/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview
 
-## Expanding the ESLint configuration
+> You can add a screenshot or GIF here.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+docs/
+ └── preview.png
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Example:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```md
+![Preview](./docs/preview.png)
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## ✨ Features
+
+- Fetch products using React Query
+- Product details page
+- Create new product
+- Loading and error states
+- Query caching
+- Automatic background refetching
+- Query invalidation after mutations
+- TypeScript support
+- Feature-based folder structure
+
+---
+
+## 🛠 Tech Stack
+
+- React 19
+- TypeScript
+- Vite
+- TanStack React Query
+- React Router
+- Axios
+
+---
+
+## 📂 Project Structure
 
 ```
+src
+├── app
+├── features
+│   └── products
+│       ├── api
+│       ├── hooks
+│       ├── types
+│       └── utils
+├── pages
+├── shared
+└── main.tsx
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/MohamadSD2002/react-query.git
+```
+
+Go to the project:
+
+```bash
+cd react-query
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📦 Available Scripts
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+Lint the project:
+
+```bash
+npm run lint
+```
+
+---
+
+## 📚 What I Learned
+
+This project was created to practice:
+
+- Server State vs Client State
+- useQuery
+- useMutation
+- Query Keys
+- Query Cache
+- Query Invalidation
+- Optimistic Updates
+- Custom Hooks
+- Feature-based Architecture
+- TypeScript with React Query
+
+---
+
+## 👨‍💻 Author
+
+**Mohammad Sedigh Bakhshaish**
+
+GitHub:
+https://github.com/MohamadSD2002
